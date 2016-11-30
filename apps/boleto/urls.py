@@ -1,5 +1,5 @@
 from django.conf.urls import url
-from apps.boleto.views import index_boletos, pago_boletos \
+from apps.boleto.views import index_boletos, pago_boletos, \
     BoletoAgregar1, BoletoAgregar2, BoletoAgregar3
 
 urlpatterns = [

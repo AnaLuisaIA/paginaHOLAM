@@ -20,13 +20,13 @@ class BoletoAgregar1(CreateView):
     #success_url= reverse_lazy('index_productos')
 
 class BoletoAgregar2(CreateView):
-    model = Producto
-    form_class= ProductoForm
+    model = Boleto
+    form_class= Boleto2Form
     template_name= 'boletos/elegir_asientos.html'
     #success_url= reverse_lazy('index_productos')
 
 class BoletoAgregar3(CreateView):
-    model = Producto
-    form_class= ProductoForm
+    model = Boleto
+    form_class= Boleto3Form
     template_name= 'boletos/elegir_asientos.html'
     #success_url= reverse_lazy('index_productos')
