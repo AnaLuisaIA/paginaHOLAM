@@ -1,3 +1,9 @@
+commit 305843f023f55626a311682c9fe1e58552db7ef1
+Author: AnaLuisaIA <analuisa.iavila@gmail.com>
+Date:   Wed Nov 16 23:10:49 2016 -0600
+
+    cambiosSettings
+
 commit 99984e7f1b84935c49e787cf9aef3738809a5a56
 Author: AnaLuisaIA <analuisa.iavila@gmail.com>
 Date:   Wed Nov 16 08:45:21 2016 -0600
