@@ -1,0 +1,33 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="{% static 'css/materialize.css' %}">
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+    <meta charset="utf-8">
+    <title>Principal</title>
+</head>
+
+<body>
+    <div class="row " id="j">
+        <div class="col l6 m6 s12 offset-l3 offset-m3">
+            <section class="menu z-depth-5 col l12 m12 s12">
+                <nav class="w">
+                    <div class="nav-wrapper teal lighten-1 ">
+                        <ul class="left hide-on-med-and-down col l12 offset-l1 ">
+                            <li><a href="{% url 'index_boletos' %}" class="waves-effect waves-light yellow darken-3 btn-large">Compra Boletos</a></li>
+                            <li><a href="{% url 'grafo' %}" class="waves-effect waves-light pink lighten-1  btn-large">Desarrollo de pasos</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <img src="{% static 'images/holam.png' %}" class="col l8 m8 s8 offset-l2 offset-m2 offset-s2" alt="olahm " />
+            </section>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="{% static 'js/materialize.js' %}"></script>
+    <script src="{% static 'js/init.js' %}"></script>
+</body>
+
+</html>

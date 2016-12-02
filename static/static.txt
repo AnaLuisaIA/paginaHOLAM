@@ -1,5 +1,0 @@
-Aquí irán todos los archivos estáticos para trabajar con los TEMPLATES
->CSS
->Fonts
->JS
->Images

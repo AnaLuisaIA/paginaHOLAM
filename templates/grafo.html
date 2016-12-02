@@ -5,7 +5,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
-    <title>Conciertos</title>
+    <title>Diseño del Grafo</title>
 
     <!-- CSS  -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -17,7 +17,7 @@
 <body>
     <nav class="white" role="navigation">
         <div class="nav-wrapper container">
-            <a id="logo-container" href="#" class="brand-logo">CONCIERTOS </a>
+            <a id="logo-container" href="#" class="brand-logo">DISEÑO GRAFO</a>
             <a href="#" class="brand-logo center"><img src="{% static 'images/hola.png' %}" alt=""></a>
             <input type="radio" name="modal" id="abrir-modal">
             <label for="abrir-modal" class="waves-effect waves-light">Mostrar Grafo</label>
@@ -25,14 +25,14 @@
             <label for="cerrar-modal">x</label>
             <div id="modal">
                 <p>Etapa del grafo</p>
-                <img src="{% static 'images/grafo0.png' %}" alt="">
+                <img src="{% static 'images/grafo.png' %}" alt="">
             </div>
         </div>
         <div id="index-banner" class="parallax-container">
             <div class="section no-pad-bot">
                 <div class="container">
 
-                    <h1 class="header center ">BIENVENIDO</h1>
+                    <h1 class="header center ">PASOS A SEGUIR</h1>
                 </div>
             </div>
         </div>
@@ -44,36 +44,39 @@
     <div class="container center" style="bottom:100px">
         <div class="section" id="section">
             <div class="row">
-                <div class="col s12 m4">
+                <div class="col s12 m3">
                     <div class="icon-block">
-                        <img src="{% static 'images/con3.png' %}" align="center" style="border-radius:60px">
-                        <h5 class="center">Filarmónica de Mexico</h5>
-                        <p class="center">Grandes obras maestras de BACH</p>
-                        <a class="waves-effect waves-light btn-large green lighten-1 center" href="#">Comprar boletos</a> 
+                        <img src="{% static 'images/paso1.jpg' %}" align="center" style="border-radius:60px">
+                        <h2 class="center">Paso 1</h2>
+                        <p text-align="justify">Elige tu concierto, tienes tres opciones y puedes elegir la que se acople a tus gustos.</p>
                     </div>
                 </div>
 
-                <div class="col s12 m4">
+                <div class="col s12 m3">
                     <div class="icon-block">
-                        <img src="{% static 'images/con2.png' %}" aling="center" style="border-radius:60px">
-                        <h5 class="center">Ballet Folklórico de México de Amalia Hernández</h5>
-                        <p class="center">Disfrutarás de una experiencia inolvidable con el ballet de la danza de la lluvia</p>
-                        <a class="waves-effect waves-light btn-large blue lighten-1  center" href="#">Comprar boleto</a>
+                        <img src="{% static 'images/paso2.jpg' %}" aling="center" style="border-radius:60px">
+                        <h2 class="center">Paso 2</h2>
+                        <p text-align="justify">Elige tus asientos, el numero de asientos o disponibilidad dependera de la locación del concierto.</p>
                     </div>
-
                 </div>
 
-                <div class="col s12 m4">
+                <div class="col s12 m3">
                     <div class="icon-block">
-                        <img src="{% static 'images/con1.png' %}" aling="center" style="border-radius:60px">
-                        <h5 class="center">Orquesta de cámara</h5>
-                        <p class="center">Este paquete es especial para ti</p>
-                        <a href="#" class="waves-effect waves-light btn-large yellow lighten-1 center">Comprar boleto</a>
+                        <img src="{% static 'images/paso3.png' %}" aling="center" style="border-radius:60px">
+                        <h2 class="center">Paso 3</h2>
+                        <p text-align="justify">Elige el metodo de pago, algunos conciertos tienen una sola opción de pago y otros los dos metodos de pago.</p>
                     </div>
-
                 </div>
+
+                <div class="col s12 m3">
+                    <div class="icon-block">
+                        <img src="{% static 'images/paso4.png' %}" aling="center" style="border-radius:60px">
+                        <h2 class="center">Paso 4</h2>
+                        <p text-align="justify">Confirmación de correo electrónico, en tu cuenta de correo se enviaran los datos de el concierto de tu elección.</p>
+                    </div>
+                </div>
+
             </div>
-
         </div>
     </div>
 

@@ -1,3 +1,9 @@
+commit c7c0ded610cc471c5ef32fafaae0cf8bda014d75
+Author: AnaLuisaIA <analuisa.iavila@gmail.com>
+Date:   Fri Dec 2 01:40:00 2016 -0600
+
+    Modificaciones en forms, urls y vistas
+
 commit daf7bf7502734bb9c3f62c2a8ffd12cae1e36aae
 Author: AnaLuisaIA <analuisa.iavila@gmail.com>
 Date:   Tue Nov 29 23:26:03 2016 -0600
