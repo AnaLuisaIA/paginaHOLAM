@@ -34,6 +34,7 @@ RECAPTCHA_PRIVATE_KEY = '6Lc0pw0UAAAAAEGEt-aQmLX-4aF8E-fq9AVHxdSD'
 # Application definition
 
 INSTALLED_APPS = [
+    'material',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

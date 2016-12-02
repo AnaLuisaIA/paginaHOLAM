@@ -1,3 +1,9 @@
+commit 2e6504ef2700dc5ce79ef58e2e9096bc22d1540f
+Author: AnaLuisaIA <analuisa.iavila@gmail.com>
+Date:   Fri Dec 2 02:37:16 2016 -0600
+
+    Agregar HTML, captcha y archivos estáticos
+
 commit c7c0ded610cc471c5ef32fafaae0cf8bda014d75
 Author: AnaLuisaIA <analuisa.iavila@gmail.com>
 Date:   Fri Dec 2 01:40:00 2016 -0600

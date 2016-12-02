@@ -9,7 +9,7 @@ class EmailForm(forms.ModelForm):
         'correoElectronico',
         ]
         labels={
-        'correoElectronico': 'Introduce tu correo electrónico: ',
+        'correoElectronico': 'Correo electrónico',
         }
         widgets={
         'correoElectronico': forms.EmailInput(attrs=None),
@@ -25,4 +25,4 @@ class TarjetaForm(forms.Form):
         regex=r'^\d{3}$',
         error_messages={'invalid': ("Número de seguridad debe de ser de 3 dígitos"), 'required':("El código de seguridad es necesario")},
         required=True, label="Código de Seguridad")
-    captcha = ReCaptchaField(error_messages={'required': ("CAPTCHA es necesario")}, label="")
+    captcha = ReCaptchaField(attrs={'theme' : 'clean'},error_messages={'required': ("CAPTCHA es necesario")}, label="")

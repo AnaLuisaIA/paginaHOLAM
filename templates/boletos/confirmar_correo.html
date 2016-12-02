@@ -1,0 +1,49 @@
+{% load staticfiles %} {% load material_form %}
+<!DOCTYPE html>
+<html lang="es">
+{% include 'material/includes/material_css.html' %} {% include 'material/includes/material_js.html' %}
+<head>
+    <meta charset="utf-8">
+    <title>Confirmación correo</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="{% static 'css/materialize.css' %}" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="{% static 'css/style.css' %}" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scalable">
+</head>
+
+<body>
+    <nav class="white" role="navigation">
+        <div class="nav-wrapper container">
+            <a id="logo-container" href="#" class="brand-logo">Correo</a>
+            <a href="#" class="brand-logo center"><img src="{% static 'images/hola.png' %}" alt=""></a>
+            <input type="radio" name="modal" id="abrir-modal">
+            <label for="abrir-modal" class="waves-effect waves-light ">Mostrar Grafo</label>
+            <input type="radio" name="modal" id="cerrar-modal">
+            <label for="cerrar-modal">x</label>
+            <div id="modal">
+                <p>Grafo</p>
+                <img id="cuatro" src="{% static 'images/grafo16.png' %}" alt="">
+            </div>
+        </div>
+        <div id="index-banner" class="parallax-container">
+            <div class="section no-pad-bot">
+                <div class="container">
+
+                    <h1 class="header center">CONFIRMACIÓN DE CORREO</h1>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+    </div>
+
+    <form method="POST">
+        <h4>Introduce tu correo electrónico para mandarte la información complementaria de tu compra
+      y recibir información de otros conciertos disponibles.</h4>
+      {% csrf_token %} {% form form=form %}{% endform %}
+        <button class="btn btn-success btn-block" type="submit">Guardar</button>
+    </form>
+    <script src="{% static 'material/js/jquery-2.2.0.js' %}"></script>
+</body>
+</html>

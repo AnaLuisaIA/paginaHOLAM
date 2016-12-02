@@ -1,0 +1,82 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Asientos 3 </title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="{% static 'css/materialize.css' %}" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="{% static 'css/style.css' %}" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+  </head>
+  <body>
+    <nav class="white" role="navigation">
+      <div class="nav-wrapper container">
+        <a id="logo-container" href="#" class="brand-logo">ASIENTOS 3</a>
+        <a href="#" class="brand-logo center"><img src="{% static 'images/hola.png' %}" alt=""></a>
+        <input type="radio" name="modal" id="abrir-modal">
+        <label for="abrir-modal" class="waves-effect waves-light ">Mostrar Grafo</label>
+        <input type="radio" name="modal" id="cerrar-modal">
+        <label for="cerrar-modal">x</label>
+        <div id="modal">
+          <p>Etapa del grafo</p>
+          <img src="{% static 'images/grafo13.png' %}" alt="">
+        </div>
+      </div>
+      <div id="index-banner" class="parallax-container">
+        <div class="section no-pad-bot">
+          <div class="container">
+
+            <h1 class="header center ">ELECCIÓN DE ASIENTOS</h1>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+        <ul class="collapsible" data-collapsible="expandable" id="asientos" >
+            <li>
+              <div class="collapsible-header active "><i class="material-icons">whatshot</i>Asientos E</div>
+              <div class="collapsible-body red lighten-5">
+                  <!--***********Primer tabla*************-->
+                <div class="row">
+                  <div class="col s12">
+                    <ul class="tabs">
+                      <li class="tab col s1"><a class="active" target="_self" href="{% url 'email_comprobar' %}">E21</a></li>
+                      <li class="tab col s1"><a target="_self" href="{% url 'email_comprobar' %}">E22</a></li>
+                      <li class="tab col s1"><a target="_self" href="{% url 'email_comprobar' %}">E23</a></li>
+                      <li class="tab col s1"><a target="_self" href="{% url 'email_comprobar' %}">E24</a></li>
+                      <li class="tab col s1"><a target="_self" href="{% url 'email_comprobar' %}">E25</a></li>
+                      <li class="tab col s1"><a target="_self" href="{% url 'email_comprobar' %}">E26</a></li>
+                      <li class="tab col s1"><a target="_self" href="{% url 'email_comprobar' %}">E27</a></li>
+                      <li class="tab col s1"><a target="_self" href="{% url 'email_comprobar' %}">E28</a></li>
+                      <li class="tab col s1"><a target="_self" href="{% url 'email_comprobar' %}">E29</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header active"><i class="material-icons">whatshot</i>Asientos K</div>
+              <div class="collapsible-body red lighten-5 ">
+                <!--***********segunda tabla*************-->
+                <div class="row">
+                  <div class="col s12">
+                    <ul class="tabs">
+                      <li class="tab col s1"><a class="active" target="_self" href="{% url 'email_comprobar' %}">K05</a></li>
+                      <li class="tab col s1"><a target="_self" href="{% url 'email_comprobar' %}">K06</a></li>
+                      <li class="tab col s1"><a target="_self" href="{% url 'email_comprobar' %}">K07</a></li>
+                      <li class="tab col s1"><a target="_self" href="{% url 'email_comprobar' %}">K08</a></li>
+                      <li class="tab col s1"><a target="_self" href="{% url 'email_comprobar' %}">K09</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+        </ul>
+    </div>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="{% static 'js/materialize.js' %}"></script>
+    <script src="{% static 'js/init.js' %}"></script>
+  </body>
+</html>

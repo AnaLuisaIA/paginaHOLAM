@@ -4,6 +4,7 @@ from apps.cliente.models import Cliente
 # Create your models here.
 class Boleto(models.Model):
     idBoleto = models.AutoField(primary_key=True)
+    #asiento = models.TextField(max_length=6)
     asientos1 = (
     ('a1','A1'),
     ('a2','A2'),

@@ -1,21 +1,18 @@
 {% load staticfiles %}
 <!DOCTYPE html>
-<html lang="es">
-
-<head>
+<html>
+  <head>
     <meta charset="utf-8">
-    <title>Compra Tarjeta </title>
+    <title>Concierto 2</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="{% static 'css/materialize.css' %}" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="{% static 'css/style.css' %}" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scalable">
-</head>
-
-<body>
+  </head>
+  <body>
     <nav class="white" role="navigation">
       <div class="nav-wrapper container">
-        <a id="logo-container" href="#" class="brand-logo">PAGO CON TARJETA</a>
+        <a id="logo-container" href="#" class="brand-logo">CONCIERTO 2</a>
         <a href="#" class="brand-logo center"><img src="{% static 'images/hola.png' %}" alt=""></a>
         <input type="radio" name="modal" id="abrir-modal">
         <label for="abrir-modal" class="waves-effect waves-light ">Mostrar Grafo</label>
@@ -23,35 +20,34 @@
         <label for="cerrar-modal">x</label>
         <div id="modal">
           <p>Etapa del grafo</p>
-          <img id="uno" src="{% static 'images/grafo3.png' %}" alt="">
-          <img id="dos" src="{% static 'images/grafo8.png' %}" alt="">
+          <img src="{% static 'images/grafo7.png' %}" alt="">
         </div>
       </div>
       <div id="index-banner" class="parallax-container">
         <div class="section no-pad-bot">
           <div class="container">
 
-            <h1 class="header center">LLENA LOS DATOS</h1>
+            <h1 class="header center ">FORMAS DE PAGO</h1>
           </div>
         </div>
       </div>
     </nav>
 
     <div class="container">
-    <form method="POST">
       <div class="row">
-        <div class="s6 offset-s3">
 
-        <div class="input-field col s6">
-        {% csrf_token %} {{ form.as_p }}
-        <button class="waves-effect waves-light yellow lighten-1 center btn btn-success btn-block" type="submit">Aceptar</button>
-    </form>
+      <div class="col l6" id="im1">
+        <img src="{% static 'images/visa_mastercard_logo.png' %}" class="col l9 offset-l2" alt="credito">
+        <a href="{% url 'pago_boletos' %}" class="waves-effect waves-light btn col l9 offset-l2 blue darken-4">Tarjetas</a>
+      </div>
+      <div class="col l6" id="im1">
+        <img src="{% static 'images/deposito.png' %}" class="col l5 offset-l5" alt="credito">
+        <a href="{% url 'email_comprobar' %}" class="waves-effect waves-light btn col l5 offset-l5 blue darken-4">Deposito Bancario</a>
+      </div>
+      </div>
     </div>
-            </div>
-  </div>
-</div>
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="{% static 'js/materialize.js' %}"></script>
     <script src="{% static 'js/init.js' %}"></script>
-</body>
+  </body>
 </html>

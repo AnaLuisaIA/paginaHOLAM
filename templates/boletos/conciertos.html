@@ -49,7 +49,7 @@
                         <img src="{% static 'images/con3.png' %}" align="center" style="border-radius:60px">
                         <h5 class="center">Filarmónica de Mexico</h5>
                         <p class="center">Grandes obras maestras de BACH</p>
-                        <a class="waves-effect waves-light btn-large green lighten-1 center" href="#">Comprar boletos</a> 
+                        <a class="waves-effect waves-light btn-large green lighten-1 center" href="{% url 'boleto_agregar1' %}">Comprar boletos</a> 
                     </div>
                 </div>
 
@@ -58,7 +58,7 @@
                         <img src="{% static 'images/con2.png' %}" aling="center" style="border-radius:60px">
                         <h5 class="center">Ballet Folklórico de México de Amalia Hernández</h5>
                         <p class="center">Disfrutarás de una experiencia inolvidable con el ballet de la danza de la lluvia</p>
-                        <a class="waves-effect waves-light btn-large blue lighten-1  center" href="#">Comprar boleto</a>
+                        <a class="waves-effect waves-light btn-large blue lighten-1  center" href="{% url 'boleto_agregar2' %}">Comprar boleto</a>
                     </div>
 
                 </div>
@@ -68,7 +68,7 @@
                         <img src="{% static 'images/con1.png' %}" aling="center" style="border-radius:60px">
                         <h5 class="center">Orquesta de cámara</h5>
                         <p class="center">Este paquete es especial para ti</p>
-                        <a href="#" class="waves-effect waves-light btn-large yellow lighten-1 center">Comprar boleto</a>
+                        <a href="{% url 'boleto_agregar3' %}" class="waves-effect waves-light btn-large yellow lighten-1 center">Comprar boleto</a>
                     </div>
 
                 </div>
