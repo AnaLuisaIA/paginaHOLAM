@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8"> {%block title%}
+    <title> HOLAM! Compra </title>
+    {%endblock%}
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scalable">
+</head>
+
+<body>
+    {% block encabezado %}
+    <header>
+        <div class="encabezado" id="formato">
+
+        </div>
+    </header>
+    {% endblock %}
+    <div class="container">
+    </div>
+
+    {% block cuerpo %}
+    <form method="POST" class="formulario">
+        {% csrf_token %} {{ form.as_p }}
+        <button class="btn btn-success btn-block" type="submit">Guardar</button>
+    </form>
+    {% endblock %}
+</body>
+
+</html>

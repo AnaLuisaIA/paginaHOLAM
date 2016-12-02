@@ -27,6 +27,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+# Captcha - google.com/recaptcha
+RECAPTCHA_PUBLIC_KEY = '6Lc0pw0UAAAAAHIZ5UrFzjGdR1i0b3yNlWWj4mjC'
+RECAPTCHA_PRIVATE_KEY = '6Lc0pw0UAAAAAEGEt-aQmLX-4aF8E-fq9AVHxdSD'
 
 # Application definition
 
@@ -39,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'apps.boleto',
     'apps.cliente',
+    'captcha',
 ]
 
 MIDDLEWARE = [

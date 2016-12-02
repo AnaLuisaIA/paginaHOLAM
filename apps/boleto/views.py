@@ -10,9 +10,6 @@ from apps.boleto.models import Boleto
 def index_boletos(request):
     return render(request, 'boletos/conciertos.html')
 
-def pago_boletos(request):
-    return render(request, 'boletos/pago_boleto.html')
-
 class BoletoAgregar1(CreateView):
     model = Boleto
     form_class= Boleto1Form
