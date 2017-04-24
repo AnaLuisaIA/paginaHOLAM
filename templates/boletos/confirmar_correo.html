@@ -23,7 +23,9 @@
             <label for="cerrar-modal">x</label>
             <div id="modal">
                 <p>Grafo</p>
-                <img id="cuatro" src="{% static 'images/grafo16.png' %}" alt="">
+                <img id="uno" src="{% static 'images/grafo4.png' %}" alt="">
+                <img id="dos1" src="{% static 'images/grafo9.png' %}" alt="">
+                <img id="tres" src="{% static 'images/grafo12.png' %}" alt="">
             </div>
         </div>
         <div id="index-banner" class="parallax-container">
@@ -36,14 +38,22 @@
         </div>
     </nav>
     <div class="container">
-    </div>
-
-    <form method="POST">
-        <h4>Introduce tu correo electrónico para mandarte la información complementaria de tu compra
-      y recibir información de otros conciertos disponibles.</h4>
-      {% csrf_token %} {% form form=form %}{% endform %}
-        <button class="btn btn-success btn-block" type="submit">Guardar</button>
-    </form>
+      <div class="row " id="j">
+          <div class="col l6 m6 s12 offset-l3 offset-m3">
+              <section class="menu z-depth-5 col l12 m12 s12" id="correo">
+                <form method="POST">
+                    <h5>Introduce tu correo electrónico para mandarte la información complementaria de tu compra
+                  y recibir información de otros conciertos disponibles.</h5>
+                  {% csrf_token %} {% form form=form %}{% endform %}
+                    <button type="submit" name="_submit" class="btn">Aceptar</button>
+                </form>
+              </section>
+          </div>
+      </div>
+        </div>
     <script src="{% static 'material/js/jquery-2.2.0.js' %}"></script>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="{% static 'js/materialize.js' %}"></script>
+    <script src="{% static 'js/init.js' %}"></script>
 </body>
 </html>

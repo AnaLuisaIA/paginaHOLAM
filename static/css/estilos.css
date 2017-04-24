@@ -71,28 +71,36 @@ li a img {
     top: 55%;
     transform: translateY(-50%);
     margin: 0;
+    height: 33%;
+    width: 33%;
 }
 
 #modal #dos {
-    position: absolute;;
-    left:25%;
-    top: 55%;
-    transform: translateY(-50%);
-    margin: 0;
-}
-#modal #tres {
     position: absolute;;
     left:50%;
     top: 55%;
     transform: translateY(-50%);
     margin: 0;
+    height: 33%;
+    width: 33%;
 }
-#modal #cuatro {
+#modal #dos1 {
     position: absolute;;
-    left:75%;
+    left:34%;
     top: 55%;
     transform: translateY(-50%);
     margin: 0;
+    height: 33%;
+    width: 33%;
+}
+#modal #tres {
+    position: absolute;;
+    left:68%;
+    top: 55%;
+    transform: translateY(-50%);
+    margin: 0;
+    height: 33%;
+    width: 33%;
 }
 
 #abrir-modal {
@@ -132,4 +140,8 @@ li a img {
 
 #cerrar-modal:checked~#modal {
     top: -100vh;
+}
+
+#correo{
+  margin-top: 20%;
 }
